@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <!-- for add new tab in Magento2 system configuration section -->
+        <tab id="twofactor" translate="label" sortOrder="10">
+             <label>Two-Factor Authentication</label>
+        </tab>
+        <!-- for create section -->
+        <section id="authentication" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Configuration</label>
+            <!-- Assign section to tab -->
+            <tab>twofactor</tab>
+            <resource>Two_Factor::configuration</resource>
+            <!-- create group for fields in section -->
+            <group id="parameters" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Two-Factor Authentication</label>
+                <!-- create text type field -->
+                
+                <field id="config" translate="label comment" sortOrder="6" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                     <label>Configuration</label>
+                     <source_model>Commerceshop\TwoFactor\Model\Config\Source\Menu</source_model>
+                </field>
+                
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+  <preference for="Magento\Backend\Block\System\Account\Edit\Form" type="Commerceshop\TwoFactor\Block\Adminhtml\Index\Form" />
+  <preference for="Magento\User\Block\User\Edit\Tab\Main" type="Commerceshop\TwoFactor\Block\Adminhtml\Index\Main" />
+  <preference for="Magento\Backend\Controller\Adminhtml\System\Account\Save" type="Commerceshop\TwoFactor\Controller\Adminhtml\Index\Save" />
+</config>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <!-- <menu>
+    	<add id="Commerceshop_TwoFactor::twofactor" title="Two Factor Auth" module="Commerceshop_TwoFactor" sortOrder="51" resource="Commerceshop_TwoFactor::twofactor"/>
+	   
+	   <add id="Commerceshop_TwoFactor::twofactor_configuration" title="Configuration" module="Commerceshop_TwoFactor" sortOrder="99" parent="Commerceshop_TwoFactor::twofactor" action="adminhtml/system_config/edit/section/hello" resource="Commerceshop_TwoFactor::twofactor_configuration"/>
+    </menu> -->
+</config>

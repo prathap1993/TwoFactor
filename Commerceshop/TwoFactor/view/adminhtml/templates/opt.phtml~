@@ -1,0 +1,32 @@
+<?php
+
+?>
+
+<form method="post" action="" id="login-form" data-mage-init='{"form": {}, "validation": {}}' autocomplete="off">
+    <fieldset class="admin__fieldset">
+        <legend class="admin__legend">
+            <span><?php /* @escapeNotVerified */ echo __('Welcosssme, please sign in') ?></span>
+        </legend><br/>
+        
+        <div class="admin__field _required field-password">
+            <label for="login" class="admin__field-label">
+                <span><?php /* @escapeNotVerified */ echo __('OTP') ?></span>
+            </label>
+            <div class="admin__field-control">
+                <input id="login"
+                       class="admin__control-text"
+                       type="password"
+                       name="login[password]"
+                       data-validate="{required:true}"
+                       value=""
+                       
+                       autocomplete="off"
+                    />
+            </div>
+            <!-- <input type="button" value="Log IN" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" /> -->
+            <button background:#000; style="center" >Log IN</button>
+        </div>
+
+    </fieldset>
+</form>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+	<head>
+        <title>Get E-Mail/Phone</title>
+        
+    </head> 
+	<body>
+		<referenceContainer name="head" remove="true"/>
+	    <referenceContainer name="header" remove="true"/>
+	    <referenceContainer name="menu" remove="true"/>
+	    <referenceContainer name="notifications" remove="true"/>
+	    <referenceContainer name="footer" remove="true"/>
+        <referenceContainer name="content">
+       
+        <referenceContainer name="menu.wrapper" remove="true"/>
+
+    <referenceBlock name="dashboard" remove="true"/>
+        	<!-- <remove  >  -->
+            <block class="Commerceshop\TwoFactor\Block\Adminhtml\Index\Input" name="twofactor_block_adminhtml_index_input"  template="Commerceshop_TwoFactor::twofactor_index_input.phtml" />
+        </referenceContainer>
+    </body>
+</page>
